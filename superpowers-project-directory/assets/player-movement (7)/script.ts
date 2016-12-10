@@ -46,6 +46,7 @@ class PlayermovementBehavior extends Sup.Behavior {
       }
 
     }
+   
   
     body.setVelocity(velocity);
     

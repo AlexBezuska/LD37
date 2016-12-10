@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 12,
+  "nextEntryId": 13,
   "nodes": [
     {
       "id": "7",
@@ -44,6 +44,11 @@
         {
           "id": "11",
           "name": "turtle",
+          "type": "sprite"
+        },
+        {
+          "id": "12",
+          "name": "player-simple-anim",
           "type": "sprite"
         }
       ]
