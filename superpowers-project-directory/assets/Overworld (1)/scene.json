@@ -12,7 +12,7 @@
             "formatVersion": 1,
             "mode": "orthographic",
             "fov": 45,
-            "orthographicScale": 5,
+            "orthographicScale": 4.8,
             "viewport": {
               "x": 0,
               "y": 0,
@@ -37,7 +37,7 @@
       "position": {
         "x": 0,
         "y": 0,
-        "z": 2
+        "z": 10
       },
       "orientation": {
         "x": 0,
@@ -48,6 +48,265 @@
       "scale": {
         "x": 1,
         "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "17",
+      "name": "UI Camera",
+      "children": [],
+      "components": [
+        {
+          "type": "Camera",
+          "config": {
+            "formatVersion": 1,
+            "mode": "orthographic",
+            "fov": 45,
+            "orthographicScale": 4.8,
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 1
+            },
+            "depth": 0,
+            "nearClippingPlane": 0.1,
+            "farClippingPlane": 100
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 9000,
+        "y": 9000,
+        "z": 10
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "18",
+      "name": "dialogueBox",
+      "children": [
+        {
+          "id": "20",
+          "name": "dialogueBoxText",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "18",
+                "text": "Text",
+                "alignment": "left",
+                "verticalAlignment": "center",
+                "size": 20,
+                "color": null,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0.18507457576924935,
+            "y": 0.7951006700168364,
+            "z": 0.10000000149011612
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.08,
+            "y": 0.08,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "19",
+          "name": "avatar",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 0.1512204080936499,
+            "y": 1.065934011421632,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "21",
+          "name": "close",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 2.584163188934326,
+            "y": 1.7208819476072676,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "23",
+          "name": "option1",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 2.584163188934326,
+            "y": 1.7208819389343262,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "22",
+          "name": "option0",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 2.584163188934326,
+            "y": 1.7208819476072676,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "24",
+          "name": "continueArrow",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 0.4044756239745766,
+            "y": 0.7651527524576522,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "TileMapRenderer",
+          "config": {
+            "formatVersion": 1,
+            "tileMapAssetId": "17",
+            "tileSetAssetId": null,
+            "castShadow": false,
+            "receiveShadow": false,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "DialoguesystemBehavior",
+            "propertyValues": {}
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": 8996.1240234375,
+        "y": 8997.85546875,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1.5,
+        "y": 1.5,
         "z": 1
       },
       "visible": true,
@@ -106,6 +365,14 @@
             "propertyValues": {}
           },
           "id": "2"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "FixDrawOrder",
+            "propertyValues": {}
+          },
+          "id": "3"
         }
       ],
       "position": {
@@ -172,6 +439,27 @@
             "layersIndex": null
           },
           "id": "1"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "FixDrawOrder",
+            "propertyValues": {}
+          },
+          "id": "3"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ProximityMessage",
+            "propertyValues": {
+              "message": {
+                "type": "string",
+                "value": "owl"
+              }
+            }
+          },
+          "id": "4"
         }
       ],
       "position": {
@@ -238,6 +526,27 @@
             "layersIndex": null
           },
           "id": "1"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "FixDrawOrder",
+            "propertyValues": {}
+          },
+          "id": "2"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ProximityMessage",
+            "propertyValues": {
+              "message": {
+                "type": "string",
+                "value": "fox"
+              }
+            }
+          },
+          "id": "3"
         }
       ],
       "position": {
@@ -304,12 +613,25 @@
             "layersIndex": null
           },
           "id": "1"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ProximityMessage",
+            "propertyValues": {
+              "message": {
+                "type": "string",
+                "value": "bee"
+              }
+            }
+          },
+          "id": "2"
         }
       ],
       "position": {
-        "x": 15.674493789672852,
-        "y": -1.494783878326416,
-        "z": 1.100000023841858
+        "x": 15.674,
+        "y": -1.495,
+        "z": -4
       },
       "orientation": {
         "x": 0,
@@ -370,6 +692,27 @@
             "layersIndex": null
           },
           "id": "1"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "FixDrawOrder",
+            "propertyValues": {}
+          },
+          "id": "2"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ProximityMessage",
+            "propertyValues": {
+              "message": {
+                "type": "string",
+                "value": "turtle"
+              }
+            }
+          },
+          "id": "3"
         }
       ],
       "position": {

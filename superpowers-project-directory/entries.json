@@ -1,6 +1,11 @@
 {
-  "nextEntryId": 13,
+  "nextEntryId": 20,
   "nodes": [
+    {
+      "id": "13",
+      "name": "fix-draw-order",
+      "type": "script"
+    },
     {
       "id": "7",
       "name": "player-movement",
@@ -50,6 +55,16 @@
           "id": "12",
           "name": "player-simple-anim",
           "type": "sprite"
+        },
+        {
+          "id": "16",
+          "name": "text-box-set",
+          "type": "tileSet"
+        },
+        {
+          "id": "17",
+          "name": "text-box",
+          "type": "tileMap"
         }
       ]
     },
@@ -64,6 +79,21 @@
           "type": "script"
         }
       ]
+    },
+    {
+      "id": "18",
+      "name": "pixeled",
+      "type": "font"
+    },
+    {
+      "id": "15",
+      "name": "dialogue-system",
+      "type": "script"
+    },
+    {
+      "id": "14",
+      "name": "proximity",
+      "type": "script"
     }
   ]
 }

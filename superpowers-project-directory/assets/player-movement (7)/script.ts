@@ -22,7 +22,7 @@ class PlayermovementBehavior extends Sup.Behavior {
     let body = this.actor.arcadeBody2D;
     let velocity = body.getVelocity();
     let sprite = this.actor.spriteRenderer;
-    Sup.log(Sup.ArcadePhysics2D.getAllBodies());
+    //Sup.log(Sup.ArcadePhysics2D.getAllBodies());
     Sup.ArcadePhysics2D.collides(body, Sup.ArcadePhysics2D.getAllBodies());
     
     
