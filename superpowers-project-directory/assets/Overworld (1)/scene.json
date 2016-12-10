@@ -968,6 +968,23 @@
                 "layersIndex": null
               },
               "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SceneChangeObject",
+                "propertyValues": {
+                  "other": {
+                    "type": "string",
+                    "value": "Player"
+                  },
+                  "sceneToChangeTo": {
+                    "type": "string",
+                    "value": "Inside"
+                  }
+                }
+              },
+              "id": "1"
             }
           ],
           "position": {

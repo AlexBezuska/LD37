@@ -56,6 +56,21 @@
           "type": "boolean"
         }
       ]
+    },
+    "SceneChangeObject": {
+      "scriptId": "31",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "other",
+          "type": "string"
+        },
+        {
+          "name": "sceneToChangeTo",
+          "type": "string"
+        }
+      ]
     }
   }
 }

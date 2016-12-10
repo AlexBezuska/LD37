@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 27,
+  "nextEntryId": 32,
   "nodes": [
     {
       "id": "13",
@@ -14,6 +14,11 @@
     {
       "id": "1",
       "name": "Overworld",
+      "type": "scene"
+    },
+    {
+      "id": "28",
+      "name": "Inside",
       "type": "scene"
     },
     {
@@ -90,6 +95,16 @@
           "id": "26",
           "name": "avatar-snail",
           "type": "sprite"
+        },
+        {
+          "id": "29",
+          "name": "home-back",
+          "type": "sprite"
+        },
+        {
+          "id": "30",
+          "name": "home-front",
+          "type": "sprite"
         }
       ]
     },
@@ -118,6 +133,11 @@
     {
       "id": "14",
       "name": "proximity",
+      "type": "script"
+    },
+    {
+      "id": "31",
+      "name": "scene change object",
       "type": "script"
     }
   ]
