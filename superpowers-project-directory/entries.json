@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 20,
+  "nextEntryId": 24,
   "nodes": [
     {
       "id": "13",
@@ -38,7 +38,7 @@
         },
         {
           "id": "9",
-          "name": "fox",
+          "name": "wombat",
           "type": "sprite"
         },
         {
@@ -65,6 +65,16 @@
           "id": "17",
           "name": "text-box",
           "type": "tileMap"
+        },
+        {
+          "id": "22",
+          "name": "avatar-owl",
+          "type": "sprite"
+        },
+        {
+          "id": "23",
+          "name": "avatar-wombat",
+          "type": "sprite"
         }
       ]
     },

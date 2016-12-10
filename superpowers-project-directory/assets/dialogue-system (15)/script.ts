@@ -13,22 +13,22 @@ function displayText(dialogueBox, currentMessageObject){
   dialogueBox.setVisible(true);
  
   //avatar and avatar animation
-//   var avatar = dialogueBox.getChild("avatar");
-//   if (currentMessageObject.avatar !== undefined){
-//     avatar.setVisible(true);
-//     var avatarSprite = avatar.spriteRenderer;
-//     var messageImageName = currentMessageObject.avatar.replace("Images/", "");
-//     var messageAnimation = currentMessageObject.avatarAnimation;
+  var avatar = dialogueBox.getChild("avatar");
+  if (currentMessageObject.avatar !== undefined){
+    avatar.setVisible(true);
+    var avatarSprite = avatar.spriteRenderer;
+    var messageImageName = currentMessageObject.avatar.replace("images/", "");
+    // var messageAnimation = currentMessageObject.avatarAnimation;
     
-//     if (avatarSprite.getSprite().name != messageImageName) {
-//       avatarSprite.setSprite(currentMessageObject.avatar);
-//     }
-//     if (avatarSprite.getAnimation() != messageAnimation) {
-//       avatarSprite.setAnimation(messageAnimation);
-//     }
-//   } else {
-//     avatar.setVisible(false);
-//   }
+    if (avatarSprite.getSprite().name !== messageImageName) {
+      avatarSprite.setSprite(currentMessageObject.avatar);
+    }
+    // if (avatarSprite.getAnimation() != messageAnimation) {
+    //   avatarSprite.setAnimation(messageAnimation);
+    // }
+  } else {
+    avatar.setVisible(false);
+  }
   
   //set the text
   dialogueBox.getChild("dialogueBoxText").textRenderer.setText(currentMessageObject.speaker + ': "' + currentMessageObject.message + '"');
@@ -83,31 +83,31 @@ dialogueTree = {
   },
   "mama" : {
     speaker : "Your Mother",
-    avatar: "Images/avatar-mama",
+    avatar: "images/avatar-mama",
     avatarAnimation: "avatar-mama-talk",
     message : "I am mama, shoe shoe...."
   },
    "owl" : {
     speaker : "Owl",
-    avatar: "Images/avatar-owl",
+    avatar: "images/avatar-owl",
     avatarAnimation: "avatar-owl-talk",
     message : "I am owl, chauka chauka!.",
   },
-   "fox" : {
-    speaker : "Fox",
-    avatar: "Images/avatar-fox",
-    avatarAnimation: "avatar-fox-talk",
-    message : "I am fox, bow wow wow!."
+   "wombat" : {
+    speaker : "wombat",
+    avatar: "images/avatar-wombat",
+    avatarAnimation: "avatar-wombat-talk",
+    message : "I am wombat, bow wow wow!."
   },
   "bee" : {
     speaker : "Busy Little Bee",
-    avatar: "Images/avatar-bee",
+    avatar: "images/avatar-bee",
     avatarAnimation: "avatar-bee-talk",
     message : "I am bee, zzz zzz zzZZ!."
   },
   "turtle" : {
     speaker : "Wise old turtle",
-    avatar: "Images/avatar-turtle",
+    avatar: "images/avatar-turtle",
     avatarAnimation: "avatar-turtle-talk",
     message : "I am turtle, grup grup...."
   }

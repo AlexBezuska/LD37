@@ -148,10 +148,29 @@
           "id": "19",
           "name": "avatar",
           "children": [],
-          "components": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "22",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
           "position": {
-            "x": 0.1512204080936499,
-            "y": 1.065934011421632,
+            "x": 4.442236160975881,
+            "y": 1.4168454802129418,
             "z": 0
           },
           "orientation": {
@@ -161,8 +180,8 @@
             "w": 1
           },
           "scale": {
-            "x": 1,
-            "y": 1,
+            "x": 1.5,
+            "y": 1.5,
             "z": 1
           },
           "visible": true,
@@ -428,7 +447,7 @@
             "height": 0.15,
             "offset": {
               "x": 0,
-              "y": -0.4
+              "y": -0.5
             },
             "bounce": {
               "x": 0,
@@ -474,8 +493,8 @@
         "w": 1
       },
       "scale": {
-        "x": 1,
-        "y": 1,
+        "x": 2,
+        "y": 2,
         "z": 1
       },
       "visible": true,
@@ -484,7 +503,7 @@
     },
     {
       "id": "5",
-      "name": "fox",
+      "name": "wombat",
       "children": [],
       "components": [
         {
@@ -511,11 +530,11 @@
             "formatVersion": 2,
             "type": "box",
             "movable": true,
-            "width": 1.5,
-            "height": 0.4,
+            "width": 1.2,
+            "height": 0.6,
             "offset": {
-              "x": 0.1,
-              "y": -0.6
+              "x": 0,
+              "y": -0.15
             },
             "bounce": {
               "x": 0,
@@ -542,7 +561,7 @@
             "propertyValues": {
               "message": {
                 "type": "string",
-                "value": "fox"
+                "value": "wombat"
               }
             }
           },
@@ -551,7 +570,7 @@
       ],
       "position": {
         "x": 12.884799003601074,
-        "y": -2.4473626613616943,
+        "y": -2.2355663776397705,
         "z": 1.100000023841858
       },
       "orientation": {
@@ -561,8 +580,8 @@
         "w": 1
       },
       "scale": {
-        "x": 1,
-        "y": 1,
+        "x": 2,
+        "y": 2,
         "z": 1
       },
       "visible": true,
