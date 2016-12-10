@@ -1,10 +1,64 @@
 {
-  "nextEntryId": 1,
+  "nextEntryId": 12,
   "nodes": [
     {
-      "id": "0",
-      "name": "new file",
+      "id": "7",
+      "name": "player-movement",
       "type": "script"
+    },
+    {
+      "id": "1",
+      "name": "Overworld",
+      "type": "scene"
+    },
+    {
+      "id": "2",
+      "name": "images",
+      "type": null,
+      "children": [
+        {
+          "id": "3",
+          "name": "bg",
+          "type": "sprite"
+        },
+        {
+          "id": "4",
+          "name": "player-static",
+          "type": "sprite"
+        },
+        {
+          "id": "8",
+          "name": "owl",
+          "type": "sprite"
+        },
+        {
+          "id": "9",
+          "name": "fox",
+          "type": "sprite"
+        },
+        {
+          "id": "10",
+          "name": "bee",
+          "type": "sprite"
+        },
+        {
+          "id": "11",
+          "name": "turtle",
+          "type": "sprite"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Camera",
+      "type": null,
+      "children": [
+        {
+          "id": "6",
+          "name": "camera-follow-player",
+          "type": "script"
+        }
+      ]
     }
   ]
 }

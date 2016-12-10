@@ -1,10 +1,21 @@
 {
   "behaviors": {
-    "NewFileBehavior": {
-      "scriptId": "0",
+    "CameraFollowPlayer": {
+      "scriptId": "6",
       "line": 0,
       "parentBehavior": null,
       "properties": []
+    },
+    "PlayermovementBehavior": {
+      "scriptId": "7",
+      "line": 2,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "speed",
+          "type": "number"
+        }
+      ]
     }
   }
 }
