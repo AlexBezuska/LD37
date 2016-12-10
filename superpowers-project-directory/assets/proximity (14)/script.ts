@@ -18,8 +18,8 @@ function inProximity(actor1, actor2, radius){
 
 
 class ProximityMessage extends Sup.Behavior {
-  radius = 1;
-  message = "owl";
+  radius = 0.4;
+  message = "default";
   continueArrow = true;
   inChat = false;
   
