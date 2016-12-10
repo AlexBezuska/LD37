@@ -169,8 +169,8 @@
             }
           ],
           "position": {
-            "x": 4.442236160975881,
-            "y": 1.4168454802129418,
+            "x": 4.119970526371617,
+            "y": 2.0529132039519027,
             "z": 0
           },
           "orientation": {
@@ -180,8 +180,52 @@
             "w": 1
           },
           "scale": {
-            "x": 1.5,
-            "y": 1.5,
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "25",
+          "name": "player-avatar",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "26",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0.6850745906704105,
+            "y": 1.5353350635268725,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.5,
+            "y": 0.5,
             "z": 1
           },
           "visible": true,
@@ -314,7 +358,7 @@
       ],
       "position": {
         "x": 8996.1240234375,
-        "y": 8997.85546875,
+        "y": 8997.6767578125,
         "z": 0
       },
       "orientation": {

@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 24,
+  "nextEntryId": 27,
   "nodes": [
     {
       "id": "13",
@@ -74,6 +74,21 @@
         {
           "id": "23",
           "name": "avatar-wombat",
+          "type": "sprite"
+        },
+        {
+          "id": "24",
+          "name": "avatar-bee",
+          "type": "sprite"
+        },
+        {
+          "id": "25",
+          "name": "avatar-turtle",
+          "type": "sprite"
+        },
+        {
+          "id": "26",
+          "name": "avatar-snail",
           "type": "sprite"
         }
       ]
