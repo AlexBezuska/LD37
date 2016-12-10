@@ -1,4 +1,10 @@
 {
-  "nextEntryId": 0,
-  "nodes": []
+  "nextEntryId": 1,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "new file",
+      "type": "script"
+    }
+  ]
 }

@@ -1,3 +1,10 @@
 {
-  "behaviors": {}
+  "behaviors": {
+    "NewFileBehavior": {
+      "scriptId": "0",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    }
+  }
 }
