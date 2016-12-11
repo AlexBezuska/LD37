@@ -1,7 +1,7 @@
 let playerFreeze = false;
 
 class PlayermovementBehavior extends Sup.Behavior {
-  
+ 
   speed = 0.05;
   
   // array to store multiple bodies
@@ -14,6 +14,7 @@ class PlayermovementBehavior extends Sup.Behavior {
     // for (let solidActor of solidActors) {
     //   this.solidBodies.push(solidActor.arcadeBody2D);
     // }
+     Sup.Audio.playSound("sounds/amb", 1);
     
   }
 
@@ -84,10 +85,13 @@ class PlayermovementBehavior extends Sup.Behavior {
         Sup.getActor("one last thing").setVisible(true);
       } else if(Sup.getActor("space to end").getVisible()
         && Sup.Input.wasKeyJustReleased("SPACE")) {
+        
         Sup.loadScene("Title");
       }
       
     }
+    
+   
     
    
     

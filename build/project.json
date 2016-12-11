@@ -264,6 +264,16 @@
           "id": "57",
           "name": "Turtle",
           "type": "sound"
+        },
+        {
+          "id": "61",
+          "name": "go-in",
+          "type": "sound"
+        },
+        {
+          "id": "62",
+          "name": "amb",
+          "type": "sound"
         }
       ]
     },

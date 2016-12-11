@@ -32,6 +32,13 @@
       "startFrameIndex": 7,
       "endFrameIndex": 13,
       "speed": 1
+    },
+    {
+      "id": "2",
+      "name": "snail-enter-shell-done",
+      "startFrameIndex": 13,
+      "endFrameIndex": 13,
+      "speed": 1
     }
   ],
   "mapSlots": {

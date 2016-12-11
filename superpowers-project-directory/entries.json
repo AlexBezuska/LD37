@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 61,
+  "nextEntryId": 63,
   "nodes": [
     {
       "id": "13",
@@ -263,6 +263,16 @@
         {
           "id": "57",
           "name": "Turtle",
+          "type": "sound"
+        },
+        {
+          "id": "61",
+          "name": "go-in",
+          "type": "sound"
+        },
+        {
+          "id": "62",
+          "name": "amb",
           "type": "sound"
         }
       ]
