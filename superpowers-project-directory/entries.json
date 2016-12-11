@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 38,
+  "nextEntryId": 40,
   "nodes": [
     {
       "id": "13",
@@ -114,6 +114,16 @@
         {
           "id": "33",
           "name": "avatar-mama-snail",
+          "type": "sprite"
+        },
+        {
+          "id": "38",
+          "name": "turtle-new",
+          "type": "sprite"
+        },
+        {
+          "id": "39",
+          "name": "bush",
           "type": "sprite"
         }
       ]

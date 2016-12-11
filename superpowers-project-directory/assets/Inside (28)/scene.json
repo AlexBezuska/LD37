@@ -518,8 +518,8 @@
             "castShadow": false,
             "receiveShadow": false,
             "color": "ffffff",
-            "overrideOpacity": true,
-            "opacity": 0.48,
+            "overrideOpacity": false,
+            "opacity": null,
             "materialType": "basic",
             "shaderAssetId": null
           },
@@ -542,7 +542,7 @@
         "y": 1,
         "z": 1
       },
-      "visible": true,
+      "visible": false,
       "layer": 0,
       "prefab": null
     },
