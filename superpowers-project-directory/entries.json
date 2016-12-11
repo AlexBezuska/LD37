@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 40,
+  "nextEntryId": 45,
   "nodes": [
     {
       "id": "13",
@@ -124,6 +124,31 @@
         {
           "id": "39",
           "name": "bush",
+          "type": "sprite"
+        },
+        {
+          "id": "40",
+          "name": "rock-1",
+          "type": "sprite"
+        },
+        {
+          "id": "41",
+          "name": "rock-2",
+          "type": "sprite"
+        },
+        {
+          "id": "42",
+          "name": "rock-3",
+          "type": "sprite"
+        },
+        {
+          "id": "43",
+          "name": "rock-4",
+          "type": "sprite"
+        },
+        {
+          "id": "44",
+          "name": "rock-5",
           "type": "sprite"
         }
       ]
