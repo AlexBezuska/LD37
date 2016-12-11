@@ -25,13 +25,9 @@
     },
     "DialoguesystemBehavior": {
       "scriptId": "15",
-      "line": 92,
+      "line": 12,
       "parentBehavior": null,
       "properties": [
-        {
-          "name": "currentMessageObject",
-          "type": "any"
-        },
         {
           "name": "selectedOption",
           "type": "number"
@@ -40,7 +36,7 @@
     },
     "ProximityMessage": {
       "scriptId": "14",
-      "line": 19,
+      "line": 18,
       "parentBehavior": null,
       "properties": [
         {

@@ -519,7 +519,7 @@
             "receiveShadow": false,
             "color": "ffffff",
             "overrideOpacity": true,
-            "opacity": 0.5,
+            "opacity": 0.48,
             "materialType": "basic",
             "shaderAssetId": null
           },

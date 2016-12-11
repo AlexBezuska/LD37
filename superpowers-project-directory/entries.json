@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 37,
+  "nextEntryId": 38,
   "nodes": [
     {
       "id": "13",
@@ -141,13 +141,13 @@
       "type": "script"
     },
     {
-      "id": "14",
-      "name": "proximity",
+      "id": "15",
+      "name": "dialogue-system",
       "type": "script"
     },
     {
-      "id": "15",
-      "name": "dialogue-system",
+      "id": "14",
+      "name": "proximity",
       "type": "script"
     },
     {
@@ -158,6 +158,11 @@
         {
           "id": "36",
           "name": "boop",
+          "type": "sound"
+        },
+        {
+          "id": "37",
+          "name": "subtle-blip",
           "type": "sound"
         }
       ]

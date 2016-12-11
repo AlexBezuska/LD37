@@ -115,7 +115,7 @@
                 "fontAssetId": "18",
                 "text": "Text",
                 "alignment": "left",
-                "verticalAlignment": "center",
+                "verticalAlignment": "top",
                 "size": 20,
                 "color": null,
                 "overrideOpacity": false,
@@ -126,7 +126,7 @@
           ],
           "position": {
             "x": 0.18507457576924935,
-            "y": 0.7951006700168364,
+            "y": 0.8120277503039688,
             "z": 0.10000000149011612
           },
           "orientation": {
