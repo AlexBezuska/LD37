@@ -57,7 +57,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "You",
             avatar: "images/avatar-owl",
             avatarAnimation: "avatar-owl-talk",
-            message: "I see you live in a great big tree, high above the mess and \n sprawl of the forest floor",
+            message: "I see you live in a great big tree, high above the \n busyness of the forest floor",
             next: "owl3"
         },
         "owl3": {
@@ -71,7 +71,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "You",
             avatar: "images/avatar-owl",
             avatarAnimation: "avatar-owl-talk",
-            message: "I have no home to keep me safe high above the mess and \n sprawl, I have no place to look out from..."
+            message: "I have no home to keep me safe high above, \n I have no place to look out from..."
         },
       
       
@@ -89,7 +89,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "Your Mother",
             avatar: "images/avatar-mama-snail",
             avatarAnimation: "avatar-mama-talk",
-            message: "There there little one, I assure you we do have \n homes, everything in the forest has its place, \n and in our case our place has us...",
+            message: "There there little one, I assure you we do have \n great homes, everything in the forest has its place, \n and in our case our place has us...",
             next: "mama->wombat 3"
         },
         "mama->wombat 3": {
@@ -103,7 +103,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
       
       
          "wombat": {
-            speaker: "wombat",
+            speaker: "Wombat",
             avatar: "images/avatar-wombat",
             avatarAnimation: "avatar-wombat-talk",
             message: "Oh hello tiny one, what brings you by our den today?",
@@ -113,11 +113,11 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "You",
             avatar: "images/avatar-wombat",
             avatarAnimation: "avatar-wombat-talk",
-            message: "...",
+            message: "...a den... \n I want to learn about your home...",
             next: "wombat3"
         },
         "wombat3": {
-            speaker: "wombat",
+            speaker: "Wombat",
             avatar: "images/avatar-wombat",
             avatarAnimation: "avatar-wombat-talk",
             message: "Inside the ground is where me and my brothers call home. \n My mama was thourough when she dug out our burrow. \n We share our space and keep each other safe.",
@@ -127,7 +127,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "You",
             avatar: "images/avatar-wombat",
             avatarAnimation: "avatar-wombat-talk",
-            message: "I have no brothers to share my space, \n \n my one room can only fit just me."
+            message: "I have no brothers to share my space, \n my one room can only fit just me."
         },
       
       
@@ -145,7 +145,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "Your Mother",
             avatar: "images/avatar-mama-snail",
             avatarAnimation: "avatar-mama-talk",
-            message: "There there little one, I assure you we do have \n homes, everything in the forest has its place, \n and in our case our place has us...",
+            message: "There there little one, I assure you we do have \n great homes, everything in the forest has its place, \n and in our case our place has us...",
             next: "mama->bee 3"
         },
         "mama->bee 3": {
@@ -160,7 +160,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
       
       
         "bee": {
-            speaker: "bee",
+            speaker: "Bee",
             avatar: "images/avatar-bee",
             avatarAnimation: "avatar-bee-talk",
             message: "Hail queen esther! \n Oh hello I didn't zzzee you down there.... ",
@@ -174,17 +174,17 @@ class DialoguesystemBehavior extends Sup.Behavior {
             next: "bee3"
         },
         "bee3": {
-            speaker: "bee",
+            speaker: "Bee",
             avatar: "images/avatar-bee",
             avatarAnimation: "avatar-bee-talk",
-            message: "Well for those of us that buzz we each have a task, \n and do what the queen asked it is our duty to serve.",
+            message: "Well for those of us that buzz we each have a task, \n we must work hard and do what the queen asks.",
             next: "bee5"
         },
        "bee5": {
-            speaker: "bee",
+            speaker: "Bee",
             avatar: "images/avatar-bee",
             avatarAnimation: "avatar-bee-talk",
-            message: "Upon waxy beds we each lay our head... \n It's hexagonal chambers protect us from dangers.... \n What it secreets is golden and sweet.",
+            message: "Upon waxy beds we each lay our head! \n It's hexagonal chambers protect us from dangers! \n What it secreets is golden and sweet.",
             next: "bee6"
         },
         "bee6": {
@@ -211,7 +211,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "Your Mother",
             avatar: "images/avatar-mama-snail",
             avatarAnimation: "avatar-mama-talk",
-            message: "There there little one, I assure you we do have \n homes, everything in the forest has its place, and in our case \n our place has us...",
+            message: "There there little one, I assure you we do have \n great homes, everything in the forest has its place, and in our case \n our place has us...",
             next: "mama->turtle 3"
         },
         "mama->turtle 3": {
@@ -224,38 +224,45 @@ class DialoguesystemBehavior extends Sup.Behavior {
       
       
       
+       "turtle": {
+            speaker: "Turtle",
+            avatar: "images/avatar-turtle",
+            avatarAnimation: "avatar-turtle-talk",
+            message: "Hello little one, what are you up to today?",
+            next: "turtle1"
+        },
       
-      "turtle": {
+      "turtle1": {
             speaker: "You",
             avatar: "images/avatar-turtle",
             avatarAnimation: "avatar-turtle-talk",
-            message: "Hello turtle, would you tell me about your pond?",
+            message: "Hello turtle, would you tell me about your home in the pond?",
             next: "turtle2"
         },
       "turtle2": {
-            speaker: "turtle",
+            speaker: "Turtle",
             avatar: "images/avatar-turtle",
             avatarAnimation: "avatar-turtle-talk",
-            message: "Hello there little one, being by the pong IS fun, but \n tomorrow I'll be on the run...",
+            message: "While being at the pond IS fun, but \n tomorrow I recon I'll be on the run...",
             next: "turtle3"
         },
         "turtle3": {
             speaker: "You",
             avatar: "images/avatar-turtle",
             avatarAnimation: "avatar-turtle-talk",
-            message: "Don't you have a place to call your own?",
+            message: "Oh no... don't you have a place to call your own?",
             next: "turtle4"
         },
         "turtle4": {
-            speaker: "wombat",
+            speaker: "Turtle",
             avatar: "images/avatar-turtle",
             avatarAnimation: "avatar-turtle-talk",
-            message: "Let me will explain - \n Folks like us are one in the same! \n Our shell is our home, it allows us to roam.",
+            message: "Let me explain - \n Folks like us are one in the same! \n Our shell is our home, it allows us to roam.",
             next: "turtle5"
         },
       
         "turtle5": {
-            speaker: "wombat",
+            speaker: "Turtle",
             avatar: "images/avatar-turtle",
             avatarAnimation: "avatar-turtle-talk",
             message: "It takes me places and I bring it along. \n It's part of us, and us part of home.",
@@ -263,6 +270,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
         },
         "turtle6": {
             speaker: "You",
+            pavatar: "images/avatar-snail-happy",
             avatar: "images/avatar-turtle",
             avatarAnimation: "avatar-turtle-talk",
             message: "....!"
@@ -275,6 +283,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
       
         "mama": {
           speaker: "You",
+          pavatar: "images/avatar-snail-happy",
           avatar: "images/avatar-mama-snail",
           avatarAnimation: "avatar-mama-talk",
           message: "Mama, mama! I need to tell you what the wise turtle told me.",
@@ -282,6 +291,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
         },
         "mama 2": {
           speaker: "Your Mother",
+          pavatar: "images/avatar-snail-happy",
           avatar: "images/avatar-mama-snail",
           avatarAnimation: "avatar-mama-talk",
           message: "Oh, well tell me what you've learned!",
@@ -289,6 +299,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
         },
         "mama 3": {
           speaker: "You",
+          pavatar: "images/avatar-snail-happy",
           avatar: "images/avatar-mama-snail",
           avatarAnimation: "avatar-mama-talk",
           message: "I may not live in a hive of royalty, \n but a noisy home isn't right more me.",
@@ -297,6 +308,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
           
         "mama 4": {
           speaker: "You",
+          pavatar: "images/avatar-snail-happy",
           avatar: "images/avatar-mama-snail",
           avatarAnimation: "avatar-mama-talk",
           message: "A burrow with fuzzy brothers sounds comfy, \n but having my own spot to recharge is lovely.",
@@ -305,6 +317,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
       
         "mama 5": {
           speaker: "You",
+          pavatar: "images/avatar-snail-happy",
           avatar: "images/avatar-mama-snail",
           avatarAnimation: "avatar-mama-talk",
           message: "I've had a great home all along, now I see!",
@@ -312,6 +325,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
         },
        "mama 6": {
           speaker: "You",
+         pavatar: "images/avatar-snail-happy",
           avatar: "images/avatar-mama-snail",
           avatarAnimation: "avatar-mama-talk",
           message: "It gives me the freedom to travel and explore, \n and you know I always want to see more.",
@@ -320,6 +334,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
       
         "mama 7": {
           speaker: "You",
+          pavatar: "images/avatar-snail-happy",
           avatar: "images/avatar-mama-snail",
           avatarAnimation: "avatar-mama-talk",
           message: "It may be be humble, it may be small... \n but I am tiny after all!",
@@ -328,6 +343,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
 
         "mama 8": {
           speaker: "You",
+          pavatar: "images/avatar-snail-happy",
           avatar: "images/avatar-mama-snail",
           avatarAnimation: "avatar-mama-talk",
           message: "Everything in the forest has its place, \n and my shell is my own space!",
@@ -336,6 +352,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
 
         "mama 9": {
           speaker: "You",
+          pavatar: "images/avatar-snail-happy",
           avatar: "images/avatar-mama-snail",
           avatarAnimation: "avatar-mama-talk",
           message: "I'm part of it and It's part of me \n and thats the only way I would want it to be!",
@@ -369,6 +386,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
 
     currentMessageObject = this.dialogueTree["default"];
     selectedOption = 0;
+    soundPlayed = false;
 
     update() {
         this.currentMessageObject = this.dialogueTree[currentMessageName];
@@ -397,10 +415,29 @@ class DialoguesystemBehavior extends Sup.Behavior {
             } else {
                 avatar.setVisible(false);
             }
+          
+            
+            var pavatar = dialogueBox.getChild("player-avatar");
+            if (this.dialogueTree[currentMessageName].pavatar !== undefined) {
+               
+                var pavatarSprite = pavatar.spriteRenderer;
+                var pmessageImageName = this.dialogueTree[currentMessageName].pavatar.replace("images/", "");
+                
+                if (pavatarSprite.getSprite().name !== pmessageImageName) {
+                    pavatarSprite.setSprite(this.dialogueTree[currentMessageName].pavatar);
+                }
+              
+            } 
+          
 
             //set the text
             dialogueBox.getChild("dialogueBoxText").textRenderer.setText(this.dialogueTree[currentMessageName].speaker + ': "' + this.dialogueTree[currentMessageName].message + '"');
 
+            if (!this.soundPlayed){
+              Sup.Audio.playSound("sounds/" + this.dialogueTree[currentMessageName].speaker);
+              this.soundPlayed = true;
+            }
+          
             var continueArrow = dialogueBox.getChild("continueArrow");
             var close = dialogueBox.getChild("close");
 
@@ -461,6 +498,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
                     chatShown = false;
                     wasJustOpened = true;
                   dialogueBoxHasFocus = false;
+                  this.soundPlayed = false;
                 }
             }
 

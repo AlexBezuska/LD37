@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 52,
+  "nextEntryId": 59,
   "nodes": [
     {
       "id": "13",
@@ -165,6 +165,11 @@
           "id": "50",
           "name": "turtle-picture",
           "type": "sprite"
+        },
+        {
+          "id": "58",
+          "name": "avatar-snail-happy",
+          "type": "sprite"
         }
       ]
     },
@@ -218,6 +223,36 @@
         {
           "id": "37",
           "name": "subtle-blip",
+          "type": "sound"
+        },
+        {
+          "id": "52",
+          "name": "You",
+          "type": "sound"
+        },
+        {
+          "id": "53",
+          "name": "Wombat",
+          "type": "sound"
+        },
+        {
+          "id": "54",
+          "name": "Bee",
+          "type": "sound"
+        },
+        {
+          "id": "55",
+          "name": "Mama",
+          "type": "sound"
+        },
+        {
+          "id": "56",
+          "name": "Owl",
+          "type": "sound"
+        },
+        {
+          "id": "57",
+          "name": "Turtle",
           "type": "sound"
         }
       ]

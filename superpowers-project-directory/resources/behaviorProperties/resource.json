@@ -31,6 +31,10 @@
         {
           "name": "selectedOption",
           "type": "number"
+        },
+        {
+          "name": "soundPlayed",
+          "type": "boolean"
         }
       ]
     },

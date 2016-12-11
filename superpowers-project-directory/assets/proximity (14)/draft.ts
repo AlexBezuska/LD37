@@ -1,7 +1,7 @@
 //real
 let talkTo = [ "turtle", "mama", "ending"];
 //debug
-//let talkTo = ["mama", "ending", "wombat", "bee", "turtle"];
+/let talkTo = ["mama", "ending", "wombat", "bee", "turtle"];
 
 function inProximity(actor1, actor2, radius){
   var circle1 = {radius: radius, x: actor1.getX(), y: actor1.getY()};
