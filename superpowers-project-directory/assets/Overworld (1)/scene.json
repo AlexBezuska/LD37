@@ -1584,6 +1584,47 @@
       "prefab": null
     },
     {
+      "id": "53",
+      "name": "ending prompt",
+      "children": [],
+      "components": [
+        {
+          "type": "TextRenderer",
+          "config": {
+            "formatVersion": 2,
+            "fontAssetId": "48",
+            "text": "Press [space] to go inside.",
+            "alignment": "center",
+            "verticalAlignment": "center",
+            "size": null,
+            "color": null,
+            "overrideOpacity": false,
+            "opacity": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 9000,
+        "y": 8998.419921875,
+        "z": 0.10000000149011612
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 0.08999999612569809,
+        "y": 0.08999999612569809,
+        "z": 1
+      },
+      "visible": false,
+      "layer": 0,
+      "prefab": null
+    },
+    {
       "id": "18",
       "name": "dialogueBox",
       "children": [
@@ -1596,11 +1637,11 @@
               "type": "TextRenderer",
               "config": {
                 "formatVersion": 2,
-                "fontAssetId": "18",
-                "text": "Text",
+                "fontAssetId": "48",
+                "text": "Mama: \"this is a test.\"",
                 "alignment": "left",
                 "verticalAlignment": "top",
-                "size": 20,
+                "size": null,
                 "color": null,
                 "overrideOpacity": false,
                 "opacity": null
@@ -1610,7 +1651,7 @@
           ],
           "position": {
             "x": 0.18507457576924935,
-            "y": 0.8120277503039688,
+            "y": 0.9773923385655507,
             "z": 0.10000000149011612
           },
           "orientation": {
@@ -1620,8 +1661,8 @@
             "w": 1
           },
           "scale": {
-            "x": 0.08,
-            "y": 0.08,
+            "x": 0.06,
+            "y": 0.06,
             "z": 1
           },
           "visible": true,
@@ -1920,6 +1961,14 @@
             "propertyValues": {}
           },
           "id": "3"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "endingScript",
+            "propertyValues": {}
+          },
+          "id": "4"
         }
       ],
       "position": {
@@ -2539,23 +2588,6 @@
                 "layersIndex": null
               },
               "id": "0"
-            },
-            {
-              "type": "Behavior",
-              "config": {
-                "behaviorName": "SceneChangeObject",
-                "propertyValues": {
-                  "other": {
-                    "type": "string",
-                    "value": "Player"
-                  },
-                  "sceneToChangeTo": {
-                    "type": "string",
-                    "value": "Inside"
-                  }
-                }
-              },
-              "id": "1"
             }
           ],
           "position": {

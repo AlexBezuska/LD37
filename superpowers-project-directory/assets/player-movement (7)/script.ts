@@ -54,6 +54,35 @@ class PlayermovementBehavior extends Sup.Behavior {
    
   body.setVelocity(velocity);
     
+
+    if (Sup.getActor("foreground-barrier")){
+      
+       if(Sup.ArcadePhysics2D.collides(body, Sup.getActor("foreground-barrier").arcadeBody2D)) {
+        Sup.getActor("foreground").setVisible(true);
+      } else {
+        Sup.getActor("foreground").setVisible(false);
+      }
+
+      if (Sup.ArcadePhysics2D.collides(body, Sup.getActor("picture frame").arcadeBody2D)
+        && Sup.getActor("one last thing").getVisible() 
+        && Sup.Input.wasKeyJustReleased("SPACE")){
+        Sup.getActor("picture frame").setVisible(true);
+        Sup.getActor("one last thing").setVisible(false);
+        Sup.getActor("space to end").setVisible(true);
+
+      } else if(Sup.ArcadePhysics2D.collides(body, Sup.getActor("picture frame").arcadeBody2D) 
+        && !Sup.getActor("picture frame").getVisible()
+        && Sup.Input.wasKeyJustReleased("SPACE")) {
+        Sup.getActor("one last thing").setVisible(true);
+      } else if(Sup.getActor("space to end").getVisible()
+        && Sup.Input.wasKeyJustReleased("SPACE")) {
+        Sup.loadScene("Title");
+      }
+      
+    }
+    
+   
+    
     
   }
 }

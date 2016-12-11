@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 45,
+  "nextEntryId": 52,
   "nodes": [
     {
       "id": "13",
@@ -19,6 +19,16 @@
     {
       "id": "28",
       "name": "Inside",
+      "type": "scene"
+    },
+    {
+      "id": "47",
+      "name": "Title",
+      "type": "scene"
+    },
+    {
+      "id": "51",
+      "name": "Controls",
       "type": "scene"
     },
     {
@@ -150,6 +160,11 @@
           "id": "44",
           "name": "rock-5",
           "type": "sprite"
+        },
+        {
+          "id": "50",
+          "name": "turtle-picture",
+          "type": "sprite"
         }
       ]
     },
@@ -171,9 +186,9 @@
       "type": "font"
     },
     {
-      "id": "34",
-      "name": "quests",
-      "type": "script"
+      "id": "48",
+      "name": "french-press",
+      "type": "font"
     },
     {
       "id": "15",
@@ -183,6 +198,11 @@
     {
       "id": "14",
       "name": "proximity",
+      "type": "script"
+    },
+    {
+      "id": "45",
+      "name": "ending",
       "type": "script"
     },
     {
@@ -205,6 +225,11 @@
     {
       "id": "31",
       "name": "scene change object",
+      "type": "script"
+    },
+    {
+      "id": "49",
+      "name": "press-key-to-change-scene",
       "type": "script"
     }
   ]

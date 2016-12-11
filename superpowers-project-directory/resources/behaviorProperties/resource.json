@@ -36,7 +36,7 @@
     },
     "ProximityMessage": {
       "scriptId": "14",
-      "line": 18,
+      "line": 20,
       "parentBehavior": null,
       "properties": [
         {
@@ -64,11 +64,31 @@
         }
       ]
     },
-    "QuestsBehavior": {
-      "scriptId": "34",
-      "line": 6,
+    "endingScript": {
+      "scriptId": "45",
+      "line": 2,
       "parentBehavior": null,
-      "properties": []
+      "properties": [
+        {
+          "name": "counter",
+          "type": "number"
+        }
+      ]
+    },
+    "changeSceneKey": {
+      "scriptId": "49",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "name": "sceneToChangeTo",
+          "type": "string"
+        }
+      ]
     }
   }
 }

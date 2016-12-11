@@ -15,7 +15,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
     dialogueTree = {
         "default": {
             speaker: "swystem_message.exe has errodge",
-            message: "I am error. Nobody should ever see this \n\n fire the developer."
+            message: "I am error. Nobody should ever see this \n fire the developer."
         },
       
       
@@ -24,7 +24,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "You",
             avatar: "images/avatar-mama-snail",
             avatarAnimation: "avatar-mama-talk",
-            message: "Mama, why don't we have a home like the \n\n other animals in the forest?",
+            message: "Mama, why don't we have a home like the \n other animals in the forest?",
             next: "mama->owl 2"
         },
       
@@ -32,14 +32,14 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "Your Mother",
             avatar: "images/avatar-mama-snail",
             avatarAnimation: "avatar-mama-talk",
-            message: "There there little one, I assure you we do have \n\n homes, everything in the forest has its place, \n\n and in our case our place has us...",
+            message: "There there little one, I assure you we do have \n homes, everything in the forest has its place, \n and in our case our place has us...",
             next: "mama->owl 3"
         },
         "mama->owl 3": {
             speaker: "Your Mother",
             avatar: "images/avatar-mama-snail",
             avatarAnimation: "avatar-mama-talk",
-            message: "Maybe you should talk to the owl and see what \n\n kind of home they have..."
+            message: "Maybe you should talk to the owl and see what \n kind of home they have..."
         },
       
       
@@ -57,21 +57,21 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "You",
             avatar: "images/avatar-owl",
             avatarAnimation: "avatar-owl-talk",
-            message: "I see you live in a great big tree, high above the mess and \n\n sprawl of the forest floor",
+            message: "I see you live in a great big tree, high above the mess and \n sprawl of the forest floor",
             next: "owl3"
         },
         "owl3": {
             speaker: "Owl",
             avatar: "images/avatar-owl",
             avatarAnimation: "avatar-owl-talk",
-            message: "My home IS fantastic, our tree hole protects us and lets \n\n us look all everything happening below.",
+            message: "My home IS fantastic, our tree hole protects us and lets \n us look all everything happening below.",
             next: "owl4"
         },
         "owl4": {
             speaker: "You",
             avatar: "images/avatar-owl",
             avatarAnimation: "avatar-owl-talk",
-            message: "I have no home to keep me safe high above the mess and \n\n sprawl, I have no place to look out from..."
+            message: "I have no home to keep me safe high above the mess and \n sprawl, I have no place to look out from..."
         },
       
       
@@ -81,7 +81,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "You",
             avatar: "images/avatar-mama-snail",
             avatarAnimation: "avatar-mama-talk",
-            message: "Mama, why don't we have a home up high, to keep us safe and \n\n watch from the sky?",
+            message: "Mama, why don't we have a home up high, to keep us safe and \n watch from the sky?",
             next: "mama->wombat 2"
         },
       
@@ -89,14 +89,14 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "Your Mother",
             avatar: "images/avatar-mama-snail",
             avatarAnimation: "avatar-mama-talk",
-            message: "There there little one, I assure you we do have \n\n homes, everything in the forest has its place, \n\n and in our case our place has us...",
+            message: "There there little one, I assure you we do have \n homes, everything in the forest has its place, \n and in our case our place has us...",
             next: "mama->wombat 3"
         },
         "mama->wombat 3": {
             speaker: "Your Mother",
             avatar: "images/avatar-mama-snail",
             avatarAnimation: "avatar-mama-talk",
-            message: "Maybe you should talk to a wombat down the way \n\n and see where they like to stay..."
+            message: "Maybe you should talk to a wombat down the way \n and see where they like to stay..."
         },
       
       
@@ -120,14 +120,14 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "wombat",
             avatar: "images/avatar-wombat",
             avatarAnimation: "avatar-wombat-talk",
-            message: "Inside the ground is where me and my brothers call home. \n\n My mama was thourough when she dug out our burrow. \n\n We share our space and keep each other safe.",
+            message: "Inside the ground is where me and my brothers call home. \n My mama was thourough when she dug out our burrow. \n We share our space and keep each other safe.",
             next: "wombat4"
         },
         "wombat4": {
             speaker: "You",
             avatar: "images/avatar-wombat",
             avatarAnimation: "avatar-wombat-talk",
-            message: "I have no brothers to share my space, my one room can only fit just me."
+            message: "I have no brothers to share my space, \n \n my one room can only fit just me."
         },
       
       
@@ -145,14 +145,14 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "Your Mother",
             avatar: "images/avatar-mama-snail",
             avatarAnimation: "avatar-mama-talk",
-            message: "There there little one, I assure you we do have \n\n homes, everything in the forest has its place, \n\n and in our case our place has us...",
+            message: "There there little one, I assure you we do have \n homes, everything in the forest has its place, \n and in our case our place has us...",
             next: "mama->bee 3"
         },
         "mama->bee 3": {
             speaker: "Your Mother",
             avatar: "images/avatar-mama-snail",
             avatarAnimation: "avatar-mama-talk",
-            message: "Maybe you should talk to a bee near the old grove \n\n see about what they call home..."
+            message: "Maybe you should talk to a bee near the old grove \n see about what they call home..."
         },
       
       
@@ -163,35 +163,35 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "bee",
             avatar: "images/avatar-bee",
             avatarAnimation: "avatar-bee-talk",
-            message: "Hail queen esther! \n\n Oh hello I didn't zzzee you down there.... ",
+            message: "Hail queen esther! \n Oh hello I didn't zzzee you down there.... ",
             next: "bee2"
         },
         "bee2": {
             speaker: "You",
             avatar: "images/avatar-bee",
             avatarAnimation: "avatar-bee-talk",
-            message: "I hear in this forest you bees buzz and thrive, \n\n why may I ask if it has to do with your hive?",
+            message: "I hear in this forest you bees buzz and thrive, \n why may I ask if it has to do with your hive?",
             next: "bee3"
         },
         "bee3": {
             speaker: "bee",
             avatar: "images/avatar-bee",
             avatarAnimation: "avatar-bee-talk",
-            message: "Well for those of us that buzz we each have a task, \n\n and do what the queen asked it is our duty to serve.",
+            message: "Well for those of us that buzz we each have a task, \n and do what the queen asked it is our duty to serve.",
             next: "bee5"
         },
        "bee5": {
             speaker: "bee",
             avatar: "images/avatar-bee",
             avatarAnimation: "avatar-bee-talk",
-            message: "Upon waxy beds we each lay our head... \n\n It's hexagonal chambers protect us from dangers.... \n\n What it secreets is golden and sweet.",
+            message: "Upon waxy beds we each lay our head... \n It's hexagonal chambers protect us from dangers.... \n What it secreets is golden and sweet.",
             next: "bee6"
         },
         "bee6": {
             speaker: "You",
             avatar: "images/avatar-bee",
             avatarAnimation: "avatar-wombat-talk",
-            message: "Thank you kind bee - for all you've taught me, \n\n I'm sure you must get back to work!"
+            message: "Thank you kind bee - for all you've taught me, \n I'm sure you must get back to work!"
         },
       
       
@@ -203,7 +203,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "You",
             avatar: "images/avatar-mama-snail",
             avatarAnimation: "avatar-mama-talk",
-            message: "Mama, why don't we have a queen to serve, \n\n sweets to eat, and jobs to do?",
+            message: "Mama, why don't we have a queen to serve, \n sweets to eat, and jobs to do?",
             next: "mama->turtle 2"
         },
       
@@ -211,14 +211,14 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "Your Mother",
             avatar: "images/avatar-mama-snail",
             avatarAnimation: "avatar-mama-talk",
-            message: "There there little one, I assure you we do have \n\n homes, everything in the forest has its place, and in our case \n our place has us...",
+            message: "There there little one, I assure you we do have \n homes, everything in the forest has its place, and in our case \n our place has us...",
             next: "mama->turtle 3"
         },
         "mama->turtle 3": {
             speaker: "Your Mother",
             avatar: "images/avatar-mama-snail",
             avatarAnimation: "avatar-mama-talk",
-            message: "Maybe you should talk to the old turtle by the lake \n\n but don't fall in for goodness\' sake..."
+            message: "Maybe you should talk to the old turtle by the lake \n but don't fall in for goodness\' sake..."
         },
       
       
@@ -236,7 +236,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "turtle",
             avatar: "images/avatar-turtle",
             avatarAnimation: "avatar-turtle-talk",
-            message: "Hello there little one, being by the pong IS fun, but \n\n tomorrow I'll be on the run...",
+            message: "Hello there little one, being by the pong IS fun, but \n tomorrow I'll be on the run...",
             next: "turtle3"
         },
         "turtle3": {
@@ -250,7 +250,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "wombat",
             avatar: "images/avatar-turtle",
             avatarAnimation: "avatar-turtle-talk",
-            message: "Let me will explain - \n\n Folks like us are one in the same! \n\n Our shell is our home, it allows us to roam.",
+            message: "Let me will explain - \n Folks like us are one in the same! \n Our shell is our home, it allows us to roam.",
             next: "turtle5"
         },
       
@@ -258,7 +258,7 @@ class DialoguesystemBehavior extends Sup.Behavior {
             speaker: "wombat",
             avatar: "images/avatar-turtle",
             avatarAnimation: "avatar-turtle-talk",
-            message: "It takes me places and I bring it along. \n\n It's part of us, and us part of home.",
+            message: "It takes me places and I bring it along. \n It's part of us, and us part of home.",
             next: "turtle6"
         },
         "turtle6": {
@@ -291,38 +291,54 @@ class DialoguesystemBehavior extends Sup.Behavior {
           speaker: "You",
           avatar: "images/avatar-mama-snail",
           avatarAnimation: "avatar-mama-talk",
-          message: "I may not live in a hive of royalty, \n\na burrow with fuzzy brothers, \n\nor a perch up high in a tree...",
+          message: "I may not live in a hive of royalty, \n but a noisy home isn't right more me.",
           next: "mama 4"
         },
-
+          
         "mama 4": {
           speaker: "You",
           avatar: "images/avatar-mama-snail",
           avatarAnimation: "avatar-mama-talk",
-          message: "But I do have a home I can take along with me!",
+          message: "A burrow with fuzzy brothers sounds comfy, \n but having my own spot to recharge is lovely.",
           next: "mama 5"
         },
-       "mama 5": {
+      
+        "mama 5": {
           speaker: "You",
           avatar: "images/avatar-mama-snail",
           avatarAnimation: "avatar-mama-talk",
-          message: "It gives me the freedom to travel and explore, \n\nand you know I always want to see more.",
+          message: "I've had a great home all along, now I see!",
           next: "mama 6"
         },
-      
-        "mama 6": {
+       "mama 6": {
           speaker: "You",
           avatar: "images/avatar-mama-snail",
           avatarAnimation: "avatar-mama-talk",
-          message: "It may be small, but I'm tiny after all...",
+          message: "It gives me the freedom to travel and explore, \n and you know I always want to see more.",
           next: "mama 7"
         },
-
+      
         "mama 7": {
           speaker: "You",
           avatar: "images/avatar-mama-snail",
           avatarAnimation: "avatar-mama-talk",
-          message: "It may be humble but \n\nI'm part of it and It's part of me \n\nand thats the only way I would want it to be!",
+          message: "It may be be humble, it may be small... \n but I am tiny after all!",
+          next: "mama 8"
+        },
+
+        "mama 8": {
+          speaker: "You",
+          avatar: "images/avatar-mama-snail",
+          avatarAnimation: "avatar-mama-talk",
+          message: "Everything in the forest has its place, \n and my shell is my own space!",
+          next: "mama 9"
+        },
+
+        "mama 9": {
+          speaker: "You",
+          avatar: "images/avatar-mama-snail",
+          avatarAnimation: "avatar-mama-talk",
+          message: "I'm part of it and It's part of me \n and thats the only way I would want it to be!",
         },
       
       

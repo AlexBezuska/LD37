@@ -57,7 +57,90 @@
     {
       "id": "17",
       "name": "UI Camera",
-      "children": [],
+      "children": [
+        {
+          "id": "31",
+          "name": "one last thing",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "48",
+                "text": "One last thing...",
+                "alignment": "center",
+                "verticalAlignment": "center",
+                "size": null,
+                "color": null,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": -1.787109375,
+            "z": -1.1999998092651367
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.09,
+            "y": 0.09,
+            "z": 1
+          },
+          "visible": false,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "32",
+          "name": "space to end",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "48",
+                "text": "The End\nPress [space] to continue",
+                "alignment": "center",
+                "verticalAlignment": "center",
+                "size": null,
+                "color": null,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": -1.541015625,
+            "z": -1.1999998092651367
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.09,
+            "y": 0.09,
+            "z": 1
+          },
+          "visible": false,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
       "components": [
         {
           "type": "Camera",
@@ -93,283 +176,6 @@
       "scale": {
         "x": 1,
         "y": 1,
-        "z": 1
-      },
-      "visible": true,
-      "layer": 0,
-      "prefab": null
-    },
-    {
-      "id": "18",
-      "name": "dialogueBox",
-      "children": [
-        {
-          "id": "20",
-          "name": "dialogueBoxText",
-          "children": [],
-          "components": [
-            {
-              "type": "TextRenderer",
-              "config": {
-                "formatVersion": 2,
-                "fontAssetId": "18",
-                "text": "Text",
-                "alignment": "left",
-                "verticalAlignment": "center",
-                "size": 20,
-                "color": null,
-                "overrideOpacity": false,
-                "opacity": null
-              },
-              "id": "0"
-            }
-          ],
-          "position": {
-            "x": 0.18507457576924935,
-            "y": 0.7951006700168364,
-            "z": 0.10000000149011612
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 0.08,
-            "y": 0.08,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": null
-        },
-        {
-          "id": "19",
-          "name": "avatar",
-          "children": [],
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "formatVersion": 1,
-                "spriteAssetId": "22",
-                "animationId": null,
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "0"
-            }
-          ],
-          "position": {
-            "x": 4.119970526371617,
-            "y": 2.0529132039519027,
-            "z": 0
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": null
-        },
-        {
-          "id": "25",
-          "name": "player-avatar",
-          "children": [],
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "formatVersion": 1,
-                "spriteAssetId": "26",
-                "animationId": null,
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "0"
-            }
-          ],
-          "position": {
-            "x": 0.6850745906704105,
-            "y": 1.5353350635268725,
-            "z": 0
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 0.5,
-            "y": 0.5,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": null
-        },
-        {
-          "id": "21",
-          "name": "close",
-          "children": [],
-          "components": [],
-          "position": {
-            "x": 2.584163188934326,
-            "y": 1.7208819476072676,
-            "z": 0
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": null
-        },
-        {
-          "id": "23",
-          "name": "option1",
-          "children": [],
-          "components": [],
-          "position": {
-            "x": 2.584163188934326,
-            "y": 1.7208819389343262,
-            "z": 0
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": null
-        },
-        {
-          "id": "22",
-          "name": "option0",
-          "children": [],
-          "components": [],
-          "position": {
-            "x": 2.584163188934326,
-            "y": 1.7208819476072676,
-            "z": 0
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": null
-        },
-        {
-          "id": "24",
-          "name": "continueArrow",
-          "children": [],
-          "components": [],
-          "position": {
-            "x": 0.4044756239745766,
-            "y": 0.7651527524576522,
-            "z": 0
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": null
-        }
-      ],
-      "components": [
-        {
-          "type": "TileMapRenderer",
-          "config": {
-            "formatVersion": 1,
-            "tileMapAssetId": "17",
-            "tileSetAssetId": null,
-            "castShadow": false,
-            "receiveShadow": false,
-            "materialType": "basic",
-            "shaderAssetId": null
-          },
-          "id": "0"
-        },
-        {
-          "type": "Behavior",
-          "config": {
-            "behaviorName": "DialoguesystemBehavior",
-            "propertyValues": {}
-          },
-          "id": "1"
-        }
-      ],
-      "position": {
-        "x": 8996.1240234375,
-        "y": 8997.6767578125,
-        "z": 0
-      },
-      "orientation": {
-        "x": 0,
-        "y": 0,
-        "z": 0,
-        "w": 1
-      },
-      "scale": {
-        "x": 1.5,
-        "y": 1.5,
         "z": 1
       },
       "visible": true,
@@ -440,7 +246,7 @@
       ],
       "position": {
         "x": 0.9213424921035767,
-        "y": 0.35236239433288574,
+        "y": -2.92914080619812,
         "z": 1.100000023841858
       },
       "orientation": {
@@ -483,8 +289,8 @@
         }
       ],
       "position": {
-        "x": -0.10247869789600372,
-        "y": 3.21246337890625,
+        "x": 0,
+        "y": 0,
         "z": -40
       },
       "orientation": {
@@ -527,8 +333,8 @@
         }
       ],
       "position": {
-        "x": -0.102,
-        "y": 3.212,
+        "x": 0,
+        "y": 0,
         "z": 19
       },
       "orientation": {
@@ -552,7 +358,7 @@
       "children": [
         {
           "id": "8",
-          "name": "barrier",
+          "name": "foreground-barrier",
           "children": [],
           "components": [
             {
@@ -580,7 +386,7 @@
           ],
           "position": {
             "x": 0,
-            "y": -1.9012158066034317,
+            "y": -5.417111650109291,
             "z": 1.100000023841858
           },
           "orientation": {
@@ -628,7 +434,7 @@
           ],
           "position": {
             "x": 0,
-            "y": 0.4593905955553055,
+            "y": -2.4872653633356094,
             "z": 1.100000023841858
           },
           "orientation": {
@@ -675,8 +481,8 @@
             }
           ],
           "position": {
-            "x": -4.272143512964249,
-            "y": -0.20624476671218872,
+            "x": -7.5201617777347565,
+            "y": -3.554717317223549,
             "z": 1.100000023841858
           },
           "orientation": {
@@ -720,28 +526,11 @@
                 "layersIndex": null
               },
               "id": "0"
-            },
-            {
-              "type": "Behavior",
-              "config": {
-                "behaviorName": "SceneChangeObject",
-                "propertyValues": {
-                  "other": {
-                    "type": "string",
-                    "value": "Player"
-                  },
-                  "sceneToChangeTo": {
-                    "type": "string",
-                    "value": "Overworld"
-                  }
-                }
-              },
-              "id": "1"
             }
           ],
           "position": {
-            "x": 7.821573585271835,
-            "y": -0.20624476671218872,
+            "x": 8.223389953374863,
+            "y": -3.7221408039331436,
             "z": 1.100000023841858
           },
           "orientation": {
@@ -756,6 +545,72 @@
             "z": 1
           },
           "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "30",
+          "name": "picture frame",
+          "children": [],
+          "components": [
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "formatVersion": 2,
+                "type": "box",
+                "movable": true,
+                "width": 6,
+                "height": 5,
+                "offset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "50",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 5.477642387151718,
+            "y": -0.8089695125818253,
+            "z": 1.100000023841858
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": false,
           "layer": 0,
           "prefab": null
         }
