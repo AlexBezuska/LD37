@@ -23,6 +23,7 @@ class PlayermovementBehavior extends Sup.Behavior {
     let velocity = body.getVelocity();
     let sprite = this.actor.spriteRenderer;
     //Sup.log(Sup.ArcadePhysics2D.getAllBodies());
+
     Sup.ArcadePhysics2D.collides(body, Sup.ArcadePhysics2D.getAllBodies());
     
     
@@ -32,7 +33,7 @@ class PlayermovementBehavior extends Sup.Behavior {
         velocity.x = -this.speed;
       } else if (Sup.Input.isKeyDown("RIGHT")){ 
         sprite.setHorizontalFlip(false);
-        velocity.x = this.speed;  
+        velocity.x = this.speed; 
       } else { 
         velocity.x = 0; 
       }
@@ -40,15 +41,56 @@ class PlayermovementBehavior extends Sup.Behavior {
       if (Sup.Input.isKeyDown("UP")){ 
         velocity.y = this.speed;  
       } else if (Sup.Input.isKeyDown("DOWN")){ 
-        velocity.y = -this.speed;    
+        velocity.y = -this.speed;
       } else { 
         velocity.y = 0;
       }
-
+      
+      if (velocity.x !== 0 || velocity.y !== 0){
+      // Sup.log(sprite.getAnimation());
+      // sprite.setAnimation("snail-moving", true);
+        sprite.playAnimation();
+      } else {
+        sprite.pauseAnimation();
+      }
+      
+    } else {
+      velocity.x = 0; 
+      velocity.y = 0;
     }
    
-  
-    body.setVelocity(velocity);
+    
+  body.setVelocity(velocity);
+    
+
+    if (Sup.getActor("foreground-barrier")){
+      
+       if(Sup.ArcadePhysics2D.collides(body, Sup.getActor("foreground-barrier").arcadeBody2D)) {
+        Sup.getActor("foreground").setVisible(true);
+      } else {
+        Sup.getActor("foreground").setVisible(false);
+      }
+
+      if (Sup.ArcadePhysics2D.collides(body, Sup.getActor("picture frame").arcadeBody2D)
+        && Sup.getActor("one last thing").getVisible() 
+        && Sup.Input.wasKeyJustReleased("SPACE")){
+        Sup.getActor("picture frame").setVisible(true);
+        Sup.getActor("one last thing").setVisible(false);
+        Sup.getActor("space to end").setVisible(true);
+
+      } else if(Sup.ArcadePhysics2D.collides(body, Sup.getActor("picture frame").arcadeBody2D) 
+        && !Sup.getActor("picture frame").getVisible()
+        && Sup.Input.wasKeyJustReleased("SPACE")) {
+        Sup.getActor("one last thing").setVisible(true);
+      } else if(Sup.getActor("space to end").getVisible()
+        && Sup.Input.wasKeyJustReleased("SPACE")) {
+        Sup.loadScene("Title");
+      }
+      
+    }
+    
+   
+    
     
   }
 }

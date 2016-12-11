@@ -191,9 +191,9 @@
           "type": "SpriteRenderer",
           "config": {
             "formatVersion": 1,
-            "spriteAssetId": "26",
-            "animationId": null,
-            "horizontalFlip": false,
+            "spriteAssetId": "60",
+            "animationId": "0",
+            "horizontalFlip": true,
             "verticalFlip": false,
             "castShadow": false,
             "receiveShadow": false,
@@ -211,11 +211,11 @@
             "formatVersion": 2,
             "type": "box",
             "movable": true,
-            "width": 0.9,
-            "height": 0.2,
+            "width": 3,
+            "height": 0.8,
             "offset": {
               "x": 0,
-              "y": -1
+              "y": -1.5
             },
             "bounce": {
               "x": 0,
@@ -245,8 +245,8 @@
         }
       ],
       "position": {
-        "x": 0.9213424921035767,
-        "y": -2.92914080619812,
+        "x": 5.609204292297363,
+        "y": -2.735673666000366,
         "z": 1.100000023841858
       },
       "orientation": {

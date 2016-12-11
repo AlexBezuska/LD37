@@ -22,6 +22,16 @@
       "type": "scene"
     },
     {
+      "id": "47",
+      "name": "Title",
+      "type": "scene"
+    },
+    {
+      "id": "51",
+      "name": "Controls",
+      "type": "scene"
+    },
+    {
       "id": "2",
       "name": "images",
       "type": null,
@@ -115,6 +125,61 @@
           "id": "33",
           "name": "avatar-mama-snail",
           "type": "sprite"
+        },
+        {
+          "id": "38",
+          "name": "turtle-new",
+          "type": "sprite"
+        },
+        {
+          "id": "39",
+          "name": "bush",
+          "type": "sprite"
+        },
+        {
+          "id": "40",
+          "name": "rock-1",
+          "type": "sprite"
+        },
+        {
+          "id": "41",
+          "name": "rock-2",
+          "type": "sprite"
+        },
+        {
+          "id": "42",
+          "name": "rock-3",
+          "type": "sprite"
+        },
+        {
+          "id": "43",
+          "name": "rock-4",
+          "type": "sprite"
+        },
+        {
+          "id": "44",
+          "name": "rock-5",
+          "type": "sprite"
+        },
+        {
+          "id": "50",
+          "name": "turtle-picture",
+          "type": "sprite"
+        },
+        {
+          "id": "58",
+          "name": "avatar-snail-happy",
+          "type": "sprite"
+        },
+        {
+          "id": "59",
+          "name": "snail-spritesheet",
+          "type": "sprite"
+        },
+        {
+          "id": "60",
+          "name": "big-snail-spritesheet",
+          "type": "sprite"
         }
       ]
     },
@@ -136,6 +201,11 @@
       "type": "font"
     },
     {
+      "id": "48",
+      "name": "french-press",
+      "type": "font"
+    },
+    {
       "id": "15",
       "name": "dialogue-system",
       "type": "script"
@@ -146,8 +216,65 @@
       "type": "script"
     },
     {
+      "id": "45",
+      "name": "ending",
+      "type": "script"
+    },
+    {
+      "id": "35",
+      "name": "sounds",
+      "type": null,
+      "children": [
+        {
+          "id": "36",
+          "name": "boop",
+          "type": "sound"
+        },
+        {
+          "id": "37",
+          "name": "subtle-blip",
+          "type": "sound"
+        },
+        {
+          "id": "52",
+          "name": "You",
+          "type": "sound"
+        },
+        {
+          "id": "53",
+          "name": "Wombat",
+          "type": "sound"
+        },
+        {
+          "id": "54",
+          "name": "Bee",
+          "type": "sound"
+        },
+        {
+          "id": "55",
+          "name": "Mama",
+          "type": "sound"
+        },
+        {
+          "id": "56",
+          "name": "Owl",
+          "type": "sound"
+        },
+        {
+          "id": "57",
+          "name": "Turtle",
+          "type": "sound"
+        }
+      ]
+    },
+    {
       "id": "31",
       "name": "scene change object",
+      "type": "script"
+    },
+    {
+      "id": "49",
+      "name": "press-key-to-change-scene",
       "type": "script"
     }
   ]

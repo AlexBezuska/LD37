@@ -41,7 +41,7 @@ class ProximityMessage extends Sup.Behavior {
             //Sup.log("was just openend = false.");
             if(Sup.Input.wasKeyJustPressed("SPACE")){
             //Sup.log("pressed in proximity.");
-            if (talkTo[0].indexOf(this.message) > -1){
+            if (talkTo[0].indexOf(this.message) === 0){
                 chatShown = true;
                 Sup.log("Injecting:", talkTo[0]);
                 currentMessageName = talkTo[0];
