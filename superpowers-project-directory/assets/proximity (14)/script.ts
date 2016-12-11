@@ -1,5 +1,5 @@
 //real
-let talkTo = [ "turtle", "mama", "ending"];
+let talkTo = ["mama->owl", "owl", "mama->wombat", "wombat", "mama->bee", "bee", "mama->turtle", "turtle", "mama", "ending"];
 //debug
 //let talkTo = ["mama", "ending", "wombat", "bee", "turtle"];
 

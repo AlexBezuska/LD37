@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 59,
+  "nextEntryId": 60,
   "nodes": [
     {
       "id": "13",
@@ -169,6 +169,11 @@
         {
           "id": "58",
           "name": "avatar-snail-happy",
+          "type": "sprite"
+        },
+        {
+          "id": "59",
+          "name": "snail-spritesheet",
           "type": "sprite"
         }
       ]
