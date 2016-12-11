@@ -1,12 +1,11 @@
 
 
-let dialogueBoxClear = false;
-let dialogueBoxShow = false;
-let dialogueBoxClosed = false;
+// let dialogueBoxClear = false;
+// let dialogueBoxShow = false;
+// let dialogueBoxClosed = false;
 let currentMessageName = "default";
-let dialogueBoxContinueArrow = true;
-
-
+// let dialogueBoxContinueArrow = true;
+let chatShown = false;
 
 function displayText(dialogueBox, currentMessageObject){
   
@@ -40,7 +39,8 @@ function displayText(dialogueBox, currentMessageObject){
   var option0 = dialogueBox.getChild("option0");
   var option1 = dialogueBox.getChild("option1");
   
-  if (currentMessageObject.choices){
+  if (currentMessageObject.choices !== undefined){
+    this.currentMessageType = "choices";
     playerFreeze = true;
     option0.setVisible(true);
     option1.setVisible(true);
@@ -49,24 +49,40 @@ function displayText(dialogueBox, currentMessageObject){
     //hide
     continueArrow.setVisible(false);
     close.setVisible(false);
+    if( Sup.Input.wasKeyJustPressed("SPACE")){
+      Sup.Audio.playSound("sounds/boop");
+      var current = currentMessageName;
+      currentMessageName = this.dialogueTree[current].choices[this.selectedOption].next;
+      Sup.log("this should go to next");
+    }
     
     // multiple
   } else if (currentMessageObject.next){
-    playerFreeze = false;
+    this.currentMessageType = "multiple";
+    playerFreeze = true;
     continueArrow.setVisible(true);
     //hide
     close.setVisible(false);
     option0.setVisible(false);
     option1.setVisible(false);
+    if( Sup.Input.wasKeyJustPressed("SPACE")){
+      Sup.Audio.playSound("sounds/boop");
+      var current = currentMessageName;
+      currentMessageName = this.dialogueTree[current].next;
+      Sup.log("this should go to next");
+    }
     
     // single
   } else {
-    playerFreeze = false;
+    playerFreeze = true;
     close.setVisible(true);
     //hide
     continueArrow.setVisible(false);
     option0.setVisible(false);
     option1.setVisible(false);
+   if( Sup.Input.wasKeyJustPressed("SPACE")){
+      Sup.Audio.playSound("sounds/boop");
+    }
   }
   
 }
@@ -83,9 +99,9 @@ dialogueTree = {
   },
   "mama" : {
     speaker : "Your Mother",
-    avatar: "images/avatar-mama",
+    avatar: "images/avatar-mama-snail",
     avatarAnimation: "avatar-mama-talk",
-    message : "I am mama, shoe shoe...."
+    message : "I am mama, shoe shoe little one...."
   },
    "owl" : {
     speaker : "Owl",
@@ -110,6 +126,26 @@ dialogueTree = {
     avatar: "images/avatar-turtle",
     avatarAnimation: "avatar-turtle-talk",
     message : "I am turtle, grup grup...."
+  },
+  "i-should-talk-to-mama" : {
+    speaker : "You",
+    message : "I should talk to the mama!",
+  },
+  "i-should-talk-to-owl" : {
+    speaker : "You",
+    message : "I should talk to the owl!",
+  },
+  "i-should-talk-to-wombat" : {
+    speaker : "You",
+    message : "I should talk to the wombat!",
+  },
+   "i-should-talk-to-bee" : {
+    speaker : "You",
+    message : "I should talk to the bee!",
+  },
+  "i-should-talk-to-turtle" : {
+    speaker : "You",
+    message : "I should talk to the turtle!",
   }
 };
   
@@ -117,76 +153,54 @@ dialogueTree = {
   selectedOption = 0;
 
   update() {
-    
-    //Sup.log("dialogueBoxClear:",  dialogueBoxClear);
-    //Sup.log("dialogueBoxShow:",  dialogueBoxShow);
-    //Sup.log("dialogueBoxClosed:",  dialogueBoxClosed)
-    //Sup.log("currentMessageName:\n",currentMessageName);
-    this.currentMessageObject = this.dialogueTree[currentMessageName];
-    //Sup.log("this.currentMessageObject:\n",this.currentMessageObject);
-    //Sup.log("dialogueBoxContinueArrow:", dialogueBoxContinueArrow);
 
     let dialogueBox = Sup.getActor("dialogueBox");
     
-    if (dialogueBoxShow && !dialogueBoxClosed){
+    if (chatShown){
       displayText(dialogueBox, this.currentMessageObject);
     } else {
-      dialogueBox.setVisible(false);
-      dialogueBox.getChild("continueArrow").setVisible(false);
-    }
-    
-    if (dialogueBoxClear){
-      dialogueBoxShow = false;
-    }
-    
-    if (dialogueBox.getVisible() && this.dialogueTree[currentMessageName].choices !== undefined){      
-      if (this.selectedOption === 0){
-        dialogueBox.getChild("option0").textRenderer.setColor(highlightColor);
-        dialogueBox.getChild("option1").textRenderer.setColor(white);
-        if(Sup.Input.wasKeyJustPressed("RIGHT")) {
-          Sup.Audio.playSound("sounds/option-select");
-          this.selectedOption = 1; 
-        }
-      }
-       if (this.selectedOption === 1){
-         dialogueBox.getChild("option0").textRenderer.setColor(white);
-        dialogueBox.getChild("option1").textRenderer.setColor(highlightColor);
-         if(Sup.Input.wasKeyJustPressed("LEFT")){ 
-           Sup.Audio.playSound("sounds/option-select");
-           this.selectedOption = 0; 
-         }
+        playerFreeze = false;
+        dialogueBox.setVisible(false);
       }
     }
-      
-    if(dialogueBox.getVisible() && Sup.Input.wasKeyJustPressed("SPACE")){
 
-      // multiple
-      if (dialogueBox.getChild("close").getVisible()){
-        Sup.Audio.playSound("sounds/close");
-        dialogueBoxClosed = true;
-        dialogueBoxClear = true;
-      }
-
-      //single
-      else if (dialogueBox.getChild("continueArrow").getVisible()){
-        Sup.Audio.playSound("sounds/select");
-        var current = currentMessageName;
-        currentMessageName = this.dialogueTree[current].next;
-      } 
-
-      //choices
-      else if (dialogueBox.getChild("option0").getVisible()){
-        Sup.Audio.playSound("sounds/select");
-        var current = currentMessageName;
-        currentMessageName = this.dialogueTree[current].choices[this.selectedOption].next;
-      } 
-
-      //error
-      else {
-        Sup.log("some sort of error!"); 
-      }
-    } 
   }
-}
 
 Sup.registerBehavior(DialoguesystemBehavior);
+
+
+//Sup.log("dialogueBoxClear:",  dialogueBoxClear);
+    //Sup.log("dialogueBoxShow:",  dialogueBoxShow);
+    //Sup.log("dialogueBoxClosed:",  dialogueBoxClosed);
+    //Sup.log("currentMessageName:\n",currentMessageName);
+    //this.currentMessageObject = this.dialogueTree[currentMessageName];
+    //Sup.log("this.currentMessageObject:\n",this.currentMessageObject);
+    //Sup.log("dialogueBoxContinueArrow:", dialogueBoxContinueArrow);
+
+    
+    
+    
+    // } else {
+    //   dialogueBox.setVisible(false);
+    //   dialogueBox.getChild("continueArrow").setVisible(false);
+    // }
+    
+    
+    // if (dialogueBox.getVisible() && this.dialogueTree[currentMessageName].choices !== undefined){      
+    //   if (this.selectedOption === 0){
+    //     dialogueBox.getChild("option0").textRenderer.setColor(highlightColor);
+    //     dialogueBox.getChild("option1").textRenderer.setColor(white);
+    //     if(Sup.Input.wasKeyJustPressed("RIGHT")) {
+    //       Sup.Audio.playSound("sounds/option-select");
+    //       this.selectedOption = 1; 
+    //     }
+    //   }
+    //    if (this.selectedOption === 1){
+    //      dialogueBox.getChild("option0").textRenderer.setColor(white);
+    //     dialogueBox.getChild("option1").textRenderer.setColor(highlightColor);
+    //      if(Sup.Input.wasKeyJustPressed("LEFT")){ 
+    //        Sup.Audio.playSound("sounds/option-select");
+    //        this.selectedOption = 0; 
+    //      }
+    //   }
+    // }

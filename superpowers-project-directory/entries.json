@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 32,
+  "nextEntryId": 37,
   "nodes": [
     {
       "id": "13",
@@ -105,6 +105,16 @@
           "id": "30",
           "name": "home-front",
           "type": "sprite"
+        },
+        {
+          "id": "32",
+          "name": "mama-snail",
+          "type": "sprite"
+        },
+        {
+          "id": "33",
+          "name": "avatar-mama-snail",
+          "type": "sprite"
         }
       ]
     },
@@ -126,14 +136,31 @@
       "type": "font"
     },
     {
-      "id": "15",
-      "name": "dialogue-system",
+      "id": "34",
+      "name": "quests",
       "type": "script"
     },
     {
       "id": "14",
       "name": "proximity",
       "type": "script"
+    },
+    {
+      "id": "15",
+      "name": "dialogue-system",
+      "type": "script"
+    },
+    {
+      "id": "35",
+      "name": "sounds",
+      "type": null,
+      "children": [
+        {
+          "id": "36",
+          "name": "boop",
+          "type": "sound"
+        }
+      ]
     },
     {
       "id": "31",

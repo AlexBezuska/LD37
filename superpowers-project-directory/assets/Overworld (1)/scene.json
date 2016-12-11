@@ -372,7 +372,7 @@
         "y": 1.5,
         "z": 1
       },
-      "visible": true,
+      "visible": false,
       "layer": 0,
       "prefab": null
     },
@@ -452,6 +452,93 @@
       "scale": {
         "x": 1,
         "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "26",
+      "name": "mama",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "32",
+            "animationId": null,
+            "horizontalFlip": true,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        },
+        {
+          "type": "ArcadeBody2D",
+          "config": {
+            "formatVersion": 2,
+            "type": "box",
+            "movable": true,
+            "width": 0.3,
+            "height": 0.09,
+            "offset": {
+              "x": 0,
+              "y": -0.135
+            },
+            "bounce": {
+              "x": 0,
+              "y": 0
+            },
+            "tileMapAssetId": null,
+            "tileSetPropertyName": null,
+            "layersIndex": null
+          },
+          "id": "1"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "FixDrawOrder",
+            "propertyValues": {}
+          },
+          "id": "3"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ProximityMessage",
+            "propertyValues": {
+              "message": {
+                "type": "string",
+                "value": "mama"
+              }
+            }
+          },
+          "id": "4"
+        }
+      ],
+      "position": {
+        "x": 1.615468978881836,
+        "y": -0.9158565402030945,
+        "z": 1.100000023841858
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1.2,
+        "y": 1.2,
         "z": 1
       },
       "visible": true,

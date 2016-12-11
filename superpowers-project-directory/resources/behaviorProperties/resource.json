@@ -25,9 +25,13 @@
     },
     "DialoguesystemBehavior": {
       "scriptId": "15",
-      "line": 76,
+      "line": 92,
       "parentBehavior": null,
       "properties": [
+        {
+          "name": "currentMessageObject",
+          "type": "any"
+        },
         {
           "name": "selectedOption",
           "type": "number"
@@ -46,14 +50,6 @@
         {
           "name": "message",
           "type": "string"
-        },
-        {
-          "name": "continueArrow",
-          "type": "boolean"
-        },
-        {
-          "name": "inChat",
-          "type": "boolean"
         }
       ]
     },
@@ -71,6 +67,12 @@
           "type": "string"
         }
       ]
+    },
+    "QuestsBehavior": {
+      "scriptId": "34",
+      "line": 6,
+      "parentBehavior": null,
+      "properties": []
     }
   }
 }

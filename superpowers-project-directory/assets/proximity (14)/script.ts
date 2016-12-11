@@ -18,28 +18,19 @@ function inProximity(actor1, actor2, radius){
 
 
 class ProximityMessage extends Sup.Behavior {
-  radius = 0.6;
+  radius = 0.5;
   message = "default";
-  continueArrow = true;
-  inChat = false;
-  
+ 
   awake() {
     
   }
 
   update() {
-    if (inProximity(this.actor, Sup.getActor("Player"), this.radius)){
-      dialogueBoxShow = true;
-      if (!this.inChat) { 
+    if (inProximity(this.actor, Sup.getActor("Player"), this.radius)) {
+      if(Sup.Input.wasKeyJustPressed("SPACE")){
+        chatShown = !chatShown;
         currentMessageName = this.message;
-        this.inChat = true;
-      } 
-      
-    } else {
-      dialogueBoxClosed = false;
-      this.inChat = false;
-      dialogueBoxClear = true;
-      // this.message = "default";
+      }
     }
     
   }

@@ -44,11 +44,16 @@ class PlayermovementBehavior extends Sup.Behavior {
       } else { 
         velocity.y = 0;
       }
+      
 
+    } else {
+      velocity.x = 0; 
+      
+        velocity.y = 0;
     }
    
-  
-    body.setVelocity(velocity);
+  body.setVelocity(velocity);
+    
     
   }
 }
