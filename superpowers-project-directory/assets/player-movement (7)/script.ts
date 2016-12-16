@@ -29,19 +29,19 @@ class PlayermovementBehavior extends Sup.Behavior {
     
     
     if (!playerFreeze) {
-      if (Sup.Input.isKeyDown("LEFT")){ 
+      if (Sup.Input.isKeyDown("LEFT") || Sup.Input.isKeyDown("A")){ 
         sprite.setHorizontalFlip(true);
         velocity.x = -this.speed;
-      } else if (Sup.Input.isKeyDown("RIGHT")){ 
+      } else if (Sup.Input.isKeyDown("RIGHT") || Sup.Input.isKeyDown("D")){ 
         sprite.setHorizontalFlip(false);
         velocity.x = this.speed; 
       } else { 
         velocity.x = 0; 
       }
       
-      if (Sup.Input.isKeyDown("UP")){ 
+      if (Sup.Input.isKeyDown("UP") || Sup.Input.isKeyDown("W")){ 
         velocity.y = this.speed;  
-      } else if (Sup.Input.isKeyDown("DOWN")){ 
+      } else if (Sup.Input.isKeyDown("DOWN") || Sup.Input.isKeyDown("S")){ 
         velocity.y = -this.speed;
       } else { 
         velocity.y = 0;

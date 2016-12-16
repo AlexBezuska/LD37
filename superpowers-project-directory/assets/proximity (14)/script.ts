@@ -1,7 +1,7 @@
 //real
 let talkTo = ["mama->owl", "owl", "mama->wombat", "wombat", "mama->bee", "bee", "mama->turtle", "turtle", "mama", "ending"];
 //debug
- talkTo = ["mama", "ending", "wombat", "bee", "turtle"];
+//talkTo = ["larry", "ending", "wombat", "bee", "turtle"];
 
 function inProximity(actor1, actor2, radius){
   var circle1 = {radius: radius, x: actor1.getX(), y: actor1.getY()};
@@ -27,15 +27,14 @@ class ProximityMessage extends Sup.Behavior {
   update() {
       
       if (talkTo[0] === "ending"){
-        Sup.log("ending:", ending);
+        //Sup.log("ending:", ending);
         ending = true;
       } else {
         
-        if (Sup.Input.wasKeyJustPressed("Q")){
-          Sup.log("you need to talk to:", talkTo[0].split("->", 1)[0]);
-        }
         //Sup.log("dialogueBoxHasFocus", dialogueBoxHasFocus);
-        if (inProximity(this.actor, Sup.getActor("Player"), this.radius) && !dialogueBoxHasFocus && !goingInShell) {
+        if (inProximity(this.actor, Sup.getActor("Player"), this.radius) 
+            //&& !dialogueBoxHasFocus 
+            && !goingInShell && !chatShown) {
 
           if(!wasJustOpened) {
             //Sup.log("was just openend = false.");
@@ -43,7 +42,7 @@ class ProximityMessage extends Sup.Behavior {
             //Sup.log("pressed in proximity.");
             if (talkTo[0].indexOf(this.message) === 0){
                 chatShown = true;
-                Sup.log("Injecting:", talkTo[0]);
+                //Sup.log("Injecting:", talkTo[0]);
                 currentMessageName = talkTo[0];
                 talkTo.shift();
               } else {

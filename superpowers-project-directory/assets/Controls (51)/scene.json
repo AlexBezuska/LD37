@@ -56,7 +56,7 @@
           "config": {
             "formatVersion": 2,
             "fontAssetId": "48",
-            "text": "Arrow Keys to move\n[space] to interact",
+            "text": "Arrow Keys or WASD to move\n[space] to interact",
             "alignment": "center",
             "verticalAlignment": "center",
             "size": null,

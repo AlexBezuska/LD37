@@ -35,6 +35,10 @@
         {
           "name": "soundPlayed",
           "type": "boolean"
+        },
+        {
+          "name": "messageType",
+          "type": "string"
         }
       ]
     },
@@ -93,6 +97,12 @@
           "type": "string"
         }
       ]
+    },
+    "RenderFPS": {
+      "scriptId": "66",
+      "line": 17,
+      "parentBehavior": null,
+      "properties": []
     }
   }
 }

@@ -1541,7 +1541,49 @@
     {
       "id": "17",
       "name": "UI Camera",
-      "children": [],
+      "children": [
+        {
+          "id": "54",
+          "name": "fpscounter",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "48",
+                "text": "HEY!",
+                "alignment": "center",
+                "verticalAlignment": "center",
+                "size": null,
+                "color": null,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -0.013671875,
+            "y": 1.685546875,
+            "z": -40.04999923706055
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.1,
+            "y": 0.1,
+            "z": 1
+          },
+          "visible": false,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
       "components": [
         {
           "type": "Camera",
@@ -1694,9 +1736,9 @@
             }
           ],
           "position": {
-            "x": 4.119970526371617,
-            "y": 2.0529132039519027,
-            "z": 0
+            "x": 4.12,
+            "y": 2.053,
+            "z": -0.1
           },
           "orientation": {
             "x": 0,
@@ -2639,8 +2681,8 @@
             }
           ],
           "position": {
-            "x": 21.648958534002304,
-            "y": -0.9485628753900528,
+            "x": 21.648960441350937,
+            "y": -0.9923797994852066,
             "z": 0
           },
           "orientation": {
@@ -2862,7 +2904,7 @@
                 "type": "box",
                 "movable": true,
                 "width": 2,
-                "height": 4,
+                "height": 7,
                 "offset": {
                   "x": 0,
                   "y": 0

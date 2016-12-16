@@ -387,6 +387,8 @@ class DialoguesystemBehavior extends Sup.Behavior {
     soundPlayed = false;
     messageType = "none";
     dialogueBox = Sup.getActor("dialogueBox");
+    avatar = this.dialogueBox.getChild("avatar");
+    pavatar = this.dialogueBox.getChild("player-avatar");
   
      awake() {
         
@@ -428,23 +430,22 @@ class DialoguesystemBehavior extends Sup.Behavior {
           this.dialogueBox.setVisible(true);
 
           //avatar stuff
-          var avatar = this.dialogueBox.getChild("avatar");
+          var 
           if (this.dialogueTree[currentMessageName].avatar !== undefined) {
-              avatar.setVisible(true);
-              var avatarSprite = avatar.spriteRenderer;
+              this.avatar.setVisible(true);
+              var avatarSprite = this.avatar.spriteRenderer;
               var messageImageName = this.dialogueTree[currentMessageName].avatar.replace("images/", "");
               if (avatarSprite.getSprite().name !== messageImageName) {
                   avatarSprite.setSprite(this.dialogueTree[currentMessageName].avatar);
               }
           } else {
-              avatar.setVisible(false);
+              this.avatar.setVisible(false);
           }
 
           // player avatar stuff
-          var pavatar = this.dialogueBox.getChild("player-avatar");
           if (this.dialogueTree[currentMessageName].pavatar !== undefined) {
 
-              var pavatarSprite = pavatar.spriteRenderer;
+              var pavatarSprite = this.pavatar.spriteRenderer;
               var pmessageImageName = this.dialogueTree[currentMessageName].pavatar.replace("images/", "");
 
               if (pavatarSprite.getSprite().name !== pmessageImageName) {

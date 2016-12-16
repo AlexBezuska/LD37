@@ -1,16 +1,6 @@
 {
-  "nextEntryId": 63,
+  "nextEntryId": 67,
   "nodes": [
-    {
-      "id": "13",
-      "name": "fix-draw-order",
-      "type": "script"
-    },
-    {
-      "id": "7",
-      "name": "player-movement",
-      "type": "script"
-    },
     {
       "id": "1",
       "name": "Overworld",
@@ -226,11 +216,6 @@
       "type": null,
       "children": [
         {
-          "id": "36",
-          "name": "boop",
-          "type": "sound"
-        },
-        {
           "id": "37",
           "name": "subtle-blip",
           "type": "sound"
@@ -238,6 +223,11 @@
         {
           "id": "52",
           "name": "You",
+          "type": "sound"
+        },
+        {
+          "id": "65",
+          "name": "Your Mother",
           "type": "sound"
         },
         {
@@ -285,6 +275,21 @@
     {
       "id": "49",
       "name": "press-key-to-change-scene",
+      "type": "script"
+    },
+    {
+      "id": "7",
+      "name": "player-movement",
+      "type": "script"
+    },
+    {
+      "id": "13",
+      "name": "fix-draw-order",
+      "type": "script"
+    },
+    {
+      "id": "66",
+      "name": "renderfps",
       "type": "script"
     }
   ]

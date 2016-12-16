@@ -127,7 +127,48 @@
       ],
       "position": {
         "x": 0,
-        "y": -4.699367046356201,
+        "y": -2.5779869556427,
+        "z": 1.100000023841858
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 0.232,
+        "y": 0.183,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "32",
+      "name": "controls",
+      "children": [],
+      "components": [
+        {
+          "type": "TextRenderer",
+          "config": {
+            "formatVersion": 2,
+            "fontAssetId": "48",
+            "text": "press [space] to start",
+            "alignment": "center",
+            "verticalAlignment": "center",
+            "size": null,
+            "color": null,
+            "overrideOpacity": false,
+            "opacity": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": -4.069946765899658,
         "z": 1.100000023841858
       },
       "orientation": {

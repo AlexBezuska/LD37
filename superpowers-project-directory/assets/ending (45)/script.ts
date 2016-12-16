@@ -14,13 +14,13 @@ class endingScript extends Sup.Behavior {
           }else {
             Sup.getActor("Player").spriteRenderer.playAnimation();
           }
-          Sup.log("this.goingInShellTimer", goingInShellTimer);
+          //Sup.log("this.goingInShellTimer", goingInShellTimer);
           goingInShellTimer--;
         }
     
     
     if(goingInShellTimer < 0){
-      Sup.log("timer still going");
+      //Sup.log("timer still going");
       goingInShellTimer = 0;
       goingInShell = false;
       Sup.loadScene("Inside");
